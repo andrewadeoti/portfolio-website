@@ -923,4 +923,108 @@ html {
 
 ::-webkit-scrollbar-thumb:hover {
     background: var(--secondary-color);
+}
+
+/* Game Interface Preview */
+.game-interface {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.game-header {
+    background: var(--accent-color);
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.game-content {
+    flex: 1;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.question {
+    background: var(--bg-secondary);
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.option {
+    background: var(--bg-accent);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    border-left: 3px solid var(--primary-color);
+}
+
+/* Progress Bar Preview */
+.progress-bar {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.progress-fill {
+    height: 20px;
+    background: var(--gradient-primary);
+    border-radius: 10px;
+    transition: width 0.3s ease;
+}
+
+.progress-text {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+/* Hackathon Project Preview */
+.hackathon-project {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hack-header {
+    background: var(--secondary-color);
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.hack-content {
+    flex: 1;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.hack-item {
+    background: var(--bg-accent);
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    text-align: center;
+    font-weight: 500;
 } 
