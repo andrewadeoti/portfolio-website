@@ -195,6 +195,6 @@ Please update the GitHub repository links for:
 - **LinkedIn:** https://linkedin.com/in/andrew-adeoti-414145249
 
 ---
-**Status:** Complete ✅
+**Status:** Complete
 **Last Updated:** 2024
 **Focus:** Hiring-ready portfolio positioned as JavaScript/TypeScript full-stack developer

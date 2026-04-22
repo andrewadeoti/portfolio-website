@@ -4,7 +4,7 @@
 
 Your portfolio has been completely redesigned with a focus on clarity, simplicity, and credibility. Here's what's been done:
 
-### ✅ Completed Changes
+### Completed Changes
 
 1. **Simplified Homepage** - Clean hero section with clear CTAs, featured projects preview, skills overview, and contact
 2. **New Pages Created**:
@@ -202,13 +202,13 @@ Search and replace in all HTML files:
 
 ## Performance Notes
 
-✅ **What's Fast**:
+What's Fast:
 - No heavy libraries (pure CSS for dark mode)
 - Minimal JavaScript (only essential functionality)
 - CSS variables for efficient theming
 - Clean, optimized HTML
 
-⚠️ **If Adding Images**:
+If Adding Images:
 - Optimize before uploading (use tinypng.com)
 - Use modern formats (WebP with fallbacks)
 - Consider lazy loading for performance
@@ -217,10 +217,10 @@ Search and replace in all HTML files:
 
 ## Browser Compatibility
 
-- ✅ Chrome/Edge 88+
-- ✅ Firefox 85+
-- ✅ Safari 14+
-- ✅ Mobile browsers (iOS Safari, Chrome Android)
+- Chrome/Edge 88+
+- Firefox 85+
+- Safari 14+
+- Mobile browsers (iOS Safari, Chrome Android)
 
 ---
 
@@ -258,12 +258,12 @@ Search and replace in all HTML files:
 
 ## Next Steps
 
-1. ✅ Sign up for EmailJS (free)
-2. ✅ Update `script.js` with your credentials
-3. ✅ Customize your info in all HTML files
-4. ✅ Add project images to `/images/` folder
-5. ✅ Test contact form
-6. ✅ Deploy to GitHub Pages or Netlify
+1. Sign up for EmailJS (free)
+2. Update `script.js` with your credentials
+3. Customize your info in all HTML files
+4. Add project images to `/images/` folder
+5. Test contact form
+6. Deploy to GitHub Pages or Netlify
 
 ---
 
