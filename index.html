@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew Adeoti - Software Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/index.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">Andrew Adeoti</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="cv.html" class="nav-link">CV</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-theme-toggle" style="display: none;">
+                <button class="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-sun"></i>
+                </button>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content" style="display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;">
+                <div style="flex: 1; min-width: 300px;">
+                    <h1 class="hero-title">Andrew Adeoti</h1>
+                    <p class="hero-subtitle">Software Developer | Full-Stack Web Applications | Backend Logic</p>
+                    <p class="hero-description">I build scalable web applications with strong backend logic and structured system design. JavaScript, TypeScript, Next.js. Focused on solving real problems through clean architecture.</p>
+                    <div class="hero-buttons">
+                        <a href="projects.html" class="btn btn-primary">View Projects</a>
+                        <a href="cv.html" class="btn btn-secondary">Download CV</a>
+                    </div>
+                </div>
+                <div style="flex: 1; min-width: 250px; display: flex; justify-content: center;">
+                    <img src="profile.jpg" alt="Andrew Adeoti" style="width: 250px; height: 250px; border-radius: 50%; object-fit: cover; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Skills Preview -->
+    <section class="skills-preview">
+        <div class="container">
+            <h2 class="section-title">Skills & Tech Stack</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <p>JavaScript • TypeScript • Python • Java • C#</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Frameworks</h3>
+                    <p>Next.js • React • REST APIs • Authentication</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools</h3>
+                    <p>Git • Docker • Azure • VS Code</p>
+                </div>
+            </div>
+            <div class="skills-cta">
+                <a href="skills.html" class="link-arrow">See full skill breakdown →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="featured-projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-card-header">
+                        <h3>Financial Planning Web App</h3>
+                        <span class="project-year">2024–2025</span>
+                    </div>
+                    <div class="project-card-substance">
+                        <div class="substance-item">
+                            <strong>Problem:</strong> 
+                            <span>Create a platform for modelling financial scenarios, savings goals, and tax calculations with dynamic projections.</span>
+                        </div>
+                        <div class="substance-item">
+                            <strong>My Role:</strong> 
+                            <span>Full-stack developer. Built modular architecture using Next.js App Router, implemented structured financial logic and tax calculation system.</span>
+                        </div>
+                        <div class="substance-item">
+                            <strong>Result:</strong> 
+                            <span>Complete financial modelling platform with accurate projections, rule-based calculations, and responsive UI.</span>
+                        </div>
+                    </div>
+                    <div class="project-card-tech">
+                        <span>Next.js</span>
+                        <span>TypeScript</span>
+                        <span>React</span>
+                    </div>
+                    <div class="project-card-links">
+                        <a href="https://github.com/andrewadeoti" target="_blank" rel="noopener">View Code <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-card-header">
+                        <h3>DormRoom Management System</h3>
+                        <span class="project-year">2024</span>
+                    </div>
+                    <div class="project-card-substance">
+                        <div class="substance-item">
+                            <strong>Problem:</strong> 
+                            <span>Create scalable backend system for dormitory management that integrates external APIs efficiently.</span>
+                        </div>
+                        <div class="substance-item">
+                            <strong>My Role:</strong> 
+                            <span>Lead backend developer. Architected system, built APIs, deployed to cloud infrastructure.</span>
+                        </div>
+                        <div class="substance-item">
+                            <strong>Result:</strong> 
+                            <span>Handles 10K+ requests/day, 99.9% uptime, integrated weather/crime/distance APIs.</span>
+                        </div>
+                    </div>
+                    <div class="project-card-tech">
+                        <span>Java</span>
+                        <span>Spring Boot</span>
+                        <span>Azure</span>
+                    </div>
+                    <div class="project-card-links">
+                        <a href="https://github.com/andrewadeoti/personal-projects" target="_blank" rel="noopener">View Code <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-card-header">
+                        <h3>Streaming Platform Web App</h3>
+                        <span class="project-year">2024</span>
+                    </div>
+                    <div class="project-card-substance">
+                        <div class="substance-item">
+                            <strong>Problem:</strong> 
+                            <span>Build responsive media platform with robust authentication and user session management.</span>
+                        </div>
+                        <div class="substance-item">
+                            <strong>My Role:</strong> 
+                            <span>Frontend and authentication developer. Implemented login system, state management, and responsive UI design.</span>
+                        </div>
+                        <div class="substance-item">
+                            <strong>Result:</strong> 
+                            <span>Fully functional authentication system with reliable session handling and responsive interface across devices.</span>
+                        </div>
+                    </div>
+                    <div class="project-card-tech">
+                        <span>JavaScript</span>
+                        <span>React</span>
+                        <span>Authentication</span>
+                    </div>
+                    <div class="project-card-links">
+                        <a href="https://github.com/andrewadeoti" target="_blank" rel="noopener">View Code <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </article>
+            </div>
+            <div class="projects-cta">
+                <a href="https://github.com/andrewadeoti?tab=repositories" target="_blank" rel="noopener" class="btn btn-secondary">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Preview -->
+    <section class="about-preview">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>I'm a Software Developer focused on building scalable web applications with strong backend logic and structured system design. I work primarily with JavaScript and TypeScript, using frameworks like Next.js to build modular, maintainable applications.</p>
+                    <p>My focus is on solving real problems through clean architecture, not just building interfaces. I've developed systems involving financial modelling, authentication, and dynamic data handling.</p>
+                </div>
+                <div class="about-cta">
+                    <a href="about.html" class="btn btn-secondary">Learn More About Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="section-subtitle">Interested in working together? Get in touch.</p>
+            
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <p><strong>Email:</strong> AndrewAdeoti11@gmail.com</p>
+                    <p><strong>Location:</strong> Orpington, Kent, UK</p>
+                    <div class="social-links">
+                        <a href="https://github.com/andrewadeoti" target="_blank" rel="noopener" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/andrew-adeoti-414145249/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Andrew Adeoti. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

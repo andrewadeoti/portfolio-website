@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Andrew Adeoti - Software Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .cv-page { font-size: 0.9rem; }
+        .cv-header { padding: 0.75rem 0; margin-bottom: 0.75rem; }
+        .cv-header h1 { font-size: 1.5rem; margin-bottom: 0.25rem; }
+        .cv-header p { font-size: 0.85rem; margin: 0; }
+        .cv-contact { font-size: 0.75rem; gap: 1rem; flex-wrap: wrap; }
+        .cv-section { margin-bottom: 0.75rem; }
+        .cv-title { font-size: 1rem; margin-bottom: 0.5rem; }
+        .cv-entry { margin-bottom: 0.5rem; }
+        .cv-entry-header { margin-bottom: 0.25rem; }
+        .cv-entry-header h3 { font-size: 0.95rem; margin: 0; }
+        .cv-entry-header .cv-date { font-size: 0.8rem; }
+        .cv-institution { font-size: 0.85rem; margin: 0.1rem 0; }
+        .cv-description { font-size: 0.85rem; margin: 0.25rem 0; }
+        .cv-bullet-list { margin: 0.25rem 0; padding-left: 1.25rem; }
+        .cv-bullet-list li { margin: 0.15rem 0; font-size: 0.85rem; line-height: 1.3; }
+        .cv-skills-grid { gap: 1rem; }
+        .container { max-width: 900px; padding: 1rem; }
+        @media print {
+            body { margin: 0; padding: 0; }
+            .cv-page { padding: 0 0.5rem; }
+        }
+    </style>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Andrew Adeoti</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="cv.html" class="nav-link">CV</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-theme-toggle" style="display: none;">
+                <button class="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-sun"></i>
+                </button>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main style="padding-top: 60px; position: relative; padding-bottom: 1rem;">
+        <div style="position: absolute; top: 70px; right: 20px; z-index: 100; font-size: 0.85rem;">
+            <button id="downloadPdfBtn" class="btn btn-primary" style="display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; font-size: 0.85rem;">
+                <i class="fas fa-download"></i> Download as PDF
+            </button>
+        </div>
+
+        <!-- CV Section -->
+        <section class="cv-page">
+            <div class="container">
+                <div class="cv-header">
+                    <h1>Andrew Adeoti</h1>
+                    <p class=\"cv-role\">Software Developer | Full-Stack Web Applications | Backend Logic</p>
+                    <div class=\"cv-contact\">
+                        <span><i class=\"fas fa-map-marker-alt\"></i> Orpington, Kent</span>
+                        <span><i class=\"fas fa-phone\"></i> 07438 826583</span>
+                        <span><i class=\"fas fa-envelope\"></i> AndrewAdeoti11@gmail.com</span>
+                        <span><i class=\"fab fa-github\"></i> <a href=\"https://github.com/andrewadeoti\" target=\"_blank\">github.com/andrewadeoti</a></span>
+                        <span><i class=\"fab fa-linkedin\"></i> <a href=\"https://linkedin.com/in/andrew-adeoti-414145249\" target=\"_blank\">LinkedIn</a></span>
+                    </div>
+                </div>
+
+                <!-- Professional Summary -->
+                <section class=\"cv-section\">
+                    <h2 class=\"cv-title\">Professional Summary</h2>
+                    <p>Software Developer with strong foundation in building full-stack web applications using JavaScript and TypeScript. Focused on backend logic, system design, and developing scalable, maintainable solutions. Experienced in debugging, data handling, and working in Agile environments.</p>
+                </section>
+
+                <!-- Education -->
+                <section class="cv-section">
+                    <h2 class="cv-title">Education</h2>
+                    <div class="cv-entry">
+                        <div class="cv-entry-header">
+                            <h3>BSc Computer Science</h3>
+                            <span class="cv-date">2022 - 2025</span>
+                        </div>
+                        <p class="cv-institution">Nottingham Trent University</p>
+                        <p class="cv-description">
+                            Specialization in Software Engineering and Full-Stack Development. Relevant coursework: Software Design Patterns, Data Structures, Web Development, Advanced Algorithms, System Design.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Experience -->
+                <section class="cv-section">
+                    <h2 class="cv-title">Professional Experience</h2>
+                    
+                    <div class="cv-entry">
+                        <div class="cv-entry-header">
+                            <h3>Data Analysis Intern</h3>
+                            <span class="cv-date">Summer 2024</span>
+                        </div>
+                        <p class="cv-institution">UBS</p>
+                        <ul class="cv-bullet-list">
+                            <li>Analyzed financial data using Python and Excel to identify market trends and patterns</li>
+                            <li>Created automated data processing pipelines reducing manual work by 40%</li>
+                            <li>Collaborated with analysts to develop reporting tools and dashboards</li>
+                            <li>Maintained data integrity and documentation standards in fast-paced environment</li>
+                        </ul>
+                    </div>
+
+                    <div class="cv-entry">
+                        <div class="cv-entry-header">
+                            <h3>Software Development Intern</h3>
+                            <span class="cv-date">2023 - 2024</span>
+                        </div>
+                        <p class="cv-institution">IEUK (Tech Innovation)</p>
+                        <ul class="cv-bullet-list">
+                            <li>Debugged and fixed critical issues in production applications in Agile environment</li>
+                            <li>Participated in daily standups, sprint planning, and code reviews</li>
+                            <li>Collaborated with developers and QA teams to identify root causes and implement solutions</li>
+                            <li>Improved debugging efficiency through systematic testing and documentation</li>
+                        </ul>
+                    </div>
+
+                    <div class="cv-entry">
+                        <div class="cv-entry-header">
+                            <h3>Technical Support Volunteer</h3>
+                            <span class="cv-date">2022 - 2023</span>
+                        </div>
+                        <p class="cv-institution">Community Tech Initiative</p>
+                        <ul class="cv-bullet-list">
+                            <li>Provided first-line technical support to 50+ community members on software and hardware issues</li>
+                            <li>Created troubleshooting guides and documentation to reduce repeat support requests</li>
+                            <li>Diagnosed and resolved complex technical problems efficiently under pressure</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Key Projects -->
+                <section class="cv-section">
+                    <h2 class="cv-title">Key Projects</h2>
+                    
+                    <div class="cv-entry">
+                        <div class="cv-entry-header">
+                            <h3>Financial Planning Web App</h3>
+                            <span>Next.js • TypeScript • React</span>
+                        </div>
+                        <p class="cv-description">
+                            Full-stack financial modelling platform for scenario planning, savings goal tracking, and tax calculations. Built modular architecture using Next.js App Router with structured financial logic system. Delivers accurate dynamic projections and responsive UI.
+                        </p>
+                    </div>
+
+                    <div class="cv-entry">
+                        <div class="cv-entry-header">
+                            <h3>Streaming Platform Web App</h3>
+                            <span>JavaScript • React • Authentication</span>
+                        </div>
+                        <p class="cv-description">
+                            Full-featured web application with user authentication, state management, and content streaming. Implemented secure login system, Redux state management, and responsive design. Handles 50+ concurrent users with optimized performance.
+                        </p>
+                    </div>
+
+                    <div class="cv-entry">
+                        <div class="cv-entry-header">
+                            <h3>DormRoom Management System</h3>
+                            <span>Java • Spring Boot • MongoDB • Azure</span>
+                        </div>
+                        <p class="cv-description">
+                            Scalable backend system integrating weather, crime, and distance APIs for dormitory analysis. Deployed to Azure with auto-scaling and Redis caching. Implemented comprehensive testing and REST API endpoints for mobile/web clients.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Skills -->
+                <section class="cv-section">
+                    <h2 class="cv-title" style="font-size: 1.1rem; margin-bottom: 0.75rem;">Technical Skills</h2>
+                    <ul class="cv-bullet-list" style="font-size: 0.9rem;">
+                        <li><strong>Operating Systems:</strong> Windows, Linux (user management, permissions, package installation), macOS (basic)</li>
+                        <li><strong>Technical Support:</strong> Troubleshooting, system configuration, hardware setup, remote support</li>
+                        <li><strong>Tools:</strong> Git, Docker, Excel</li>
+                        <li><strong>Programming:</strong> Python, Java, C#, SQL</li>
+                        <li><strong>Libraries:</strong> Matplotlib, TensorFlow, Scikit-learn, PyTorch, Keras, Seaborn</li>
+                        <li><strong>Core Competencies:</strong> Issue resolution, time prioritisation, communication, problem-solving</li>
+                    </ul>
+                </section>
+
+                <!-- Certifications -->
+                <section class="cv-section">
+                    <h2 class="cv-title" style="font-size: 1.1rem; margin-bottom: 0.75rem;">Certifications & Recognition</h2>
+                    <ul class="cv-bullet-list" style="font-size: 0.9rem;">
+                        <li>Hackathon Participant — HackNotts & Hack a Duck (2023–2024)</li>
+                        <li>Social Wellbeing Officer at NTU Brazilian Jiu Jitsu (2024–2025)</li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Andrew Adeoti. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('downloadPdfBtn').addEventListener('click', function() {
+            const element = document.querySelector('.cv-page');
+            const opt = {
+                margin: [5, 8, 5, 8],
+                filename: 'Andrew-Adeoti-CV.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2, useCORS: true },
+                jsPDF: { orientation: 'portrait', unit: 'mm', format: 'a4' }
+            };
+            html2pdf().set(opt).from(element).save();
+        });
+    </script>
+</body>
+</html>
